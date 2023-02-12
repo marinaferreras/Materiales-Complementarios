@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Create Account</h1>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="" required title="Rellene este campo">
+        <div class="error-message" id="nameError"></div>
+        
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="" required title="Rellene este campo">
+        <div class="error-message" id="emailError"></div>
+
+        <label for="password">Clave</label>
+        <input type="password" id="password" name="password" placeholder="" required title="Rellene este campo">
+        <div class="error-message" id="passwordError"></div>
+
+        <label for="confirmPassword">Confirme su clave</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="" required title="Rellene este campo">
+        <div class="error-message" id="confirmPasswordError"></div>
+
+        <button type="submit">Enviar</button>
+        <div class="success-message" id="success"></div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
